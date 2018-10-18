@@ -1,0 +1,3 @@
+[submodule "git-utils/git-ignore/data"]
+	path = git-utils/git-ignore/data
+	url = https://github.com/github/gitignore
