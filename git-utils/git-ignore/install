@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if ! [ -d ~/.local/bin ]; then
+	mkdir ~/.local/bin
+fi
+cp ./git-ignore.py ~/.local/bin/git-ignore
+
+cp -r ./data ~/.local/bin/
