@@ -9,6 +9,7 @@ def display_help():
     """
     Displays the help message
     """
+    print('TODO: Add the help message')
     pass
 
 def load_links():
@@ -34,6 +35,10 @@ def main():
     data = '\n'.join(r) + '\n'
     p = os.getcwd() + '/.gitignore'
     if os.path.exists(p):
+        inp = input('Do you want to overwrite gitignore? [Y/n] ') or 'Y'
+        if inp.lower() == 'n':
+            print('Aborted.')
+            return
         os.remove(p)
     Path(p).touch()
     with open(p,'w') as f:
